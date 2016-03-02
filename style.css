@@ -1,0 +1,197 @@
+.jquery-script-center {
+    top:0px;
+    height: 50px;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height:25px;
+    word-spacing: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      line-height:17px;
+      overflow-x: hidden;
+    }
+
+  html{
+    border: 1px solid white;
+    }
+
+
+    a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    ::selection {
+      background: #000;
+      color:#fff;
+    }
+
+    ::-moz-selection {
+      background: #000;
+      color:#fff;
+    }
+
+    ::-webkit-selection {
+      background:#000;
+      color:#fff;
+    }
+
+    #container {
+      position: relative;
+      height: 500px;
+      width: 100%;
+      padding:-10px;
+      border: 0px solid black;
+     /* background-color: #F7AD92; */
+      background-color: black;
+      -webkit-perspective: 500;
+      /*mix-blend-mode: exclusion; */
+      transition: perspective .25s, perspective-origin .25s;
+    }
+
+    #container > div {
+      position: absolute;
+      margin: 5px;
+      height: 100%;
+      width: 300px;
+      padding: 50px;
+      -webkit-box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+     #container > .title{ /*title*/
+     /* border-style: solid;
+      border-width: 7px; */
+      position: inherit;
+      top:80px;
+      left:35%;
+      font-size: 45px;
+      color: black;
+      line-height:50px;
+      height: 180px;
+      -webkit-transform: rotateY(-10deg);
+    }
+
+    #container > .vertical {
+      top:10px;
+      width:50%;
+      left:25%;
+      height:300%;
+      /* background-color: #00004C; */
+      background-color: white;
+      -webkit-transform: rotateY(90deg);
+    }
+
+    #container > .horizontal{
+      top:300px;
+      left:0px;
+      width:400px;
+      height:500px;
+      background-color: white;
+      -webkit-transform: rotateX(60deg);
+    }
+
+    #container > .box2{ /*second alinea*/
+      top:500px;
+      width: 50%;
+      left:55%;
+      height: 550px;
+      background-color: black;
+      -webkit-transform: rotateY(10deg);
+    }
+
+    #container > .subtittle1 {
+      top: 200px;
+      left:10%;
+      font-size: 20px;
+      color: black;
+      font-family: 'Open Sans', sans-serif;
+      -webkit-transform: rotateX(10deg);
+    }
+
+    #container > .intro{ /*first alinea*/
+      top:250px;
+      width: 50%;
+      left:10%;
+      height: 100%;
+      -webkit-transform: rotateY(1deg);
+    }
+
+    #container > .image1{ /*first alinea*/
+      top:550px;
+      width: 100%;
+      left:20%;
+      height: 100%;
+      -webkit-transform: rotateY(-30deg);
+    }
+
+    #container > .alinea1{ /*first alinea*/
+      top:500px;
+      width: 50%;
+      left:50%;
+      height: 100%;
+      color: white;
+      -webkit-transform: rotateY(1deg);
+    }
+
+    #container > .alinea2{ /*first alinea*/
+      color: white;
+      top:900px;
+      width: 45%;
+      left:3%;
+      height: 100%;
+      -webkit-transform: rotateY(-1deg);
+    }
+
+   #container > .box3{ /*atmosphere color*/
+      background-color: black;
+      top:900px;
+      width: 60%;
+      left:7%;
+      height: 500px;
+      -webkit-transform: rotateY(45deg);
+    }
+
+   #container > .footnote {
+      background-color: grey;
+      padding:1px;
+      top: 1100px;
+      left: auto;
+      right: 25%;
+      height: auto;
+      width: auto;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 9px;
+      -webkit-transform: rotateY(-10deg);
+    }
+
+    #controls {
+      margin: 10px 10px;
+      width: 500px;
+      padding-top: 700px;
+    }
+    
+    #controls > input {
+      width: 100%;
+    }
+
+
+    .hide{ display: none;}
+
+    

@@ -3,179 +3,19 @@
    "http://www.w3.org/TR/html4/loose.dtd">
 
 <html lang="en">
+
 <head>
-  <title>The relationship between content and site</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="description" content="What is the relationship between content and site?"/><!-- Description. Used a.o. by Facebook -->
-  <meta property="og:title" content="The relationship between content and site" /><!-- The title that appears on Facebook-->
-  <meta property="dc:title" content="The relationship between content and site" /><!-- Specify the title with the Dublin Core Metadata standard for archival purposes-->
-  <meta property="dc:creator" content="Rafael Henneberke" /><!-- Specify the author with the Dublin Core Metadata standard for archival purposes-->
-  <meta property="og:description" content="What is the relationship between content and site? What is the relationship between content and site? What is the relationship between content and site? What is the relationship between content and site?" />
-  <meta property="og:image" content="http://kabk.github.io/govt-theses-16-rafael-henneberke/preview.jpg" />
-  <meta property="dc:creator" content="Rafael Henneberke" />
-  <style type="text/css" media="screen">
+  <title>Perceptual Frames</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 11px;
-    }
-
-    #container {
-      position: relative;
-      height: 500px;
-      width: 100%;
-      padding:-10px;
-      border: 0px solid black;
-     /* background-color: #F7AD92; */
-      background-color: black;
-      -webkit-perspective: 500;
-      /*mix-blend-mode: exclusion; */
-    }
-
-    #container > div {
-      position: absolute;
-      margin: 10px;
-      height: 100%;
-      width: 300px;
-      padding: 20px;
-      -webkit-box-sizing: border-box;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    #container > :first-child {
-      top:10px;
-      width:50%;
-      left:50%;
-      /* background-color: #00004C; */
-      background-color: white;
-      -webkit-transform: rotateX(-30deg);
-      -webkit-transform: rotateY(80deg);
-    }
-
-    #container > .color1{
-      top:400px;
-      left:0%;
-      width:100%;
-      height:500px;
-      background-color: white;
-      -webkit-transform: rotateX(65deg);
-      -webkit-transform: rotateY(-35deg);
-    }
-
-    #container > .color2{
-      top:200px;
-      left:1%;
-      width:40%;
-      height:700px;
-      background-color: white;
-      -webkit-transform: rotateY(25deg);
-      -webkit-transform: rotateX(-45deg);
-    }
-
-    #container > .color3{
-      top:450px;
-      left:27%;
-      width:25%;
-      height:350px;
-      background-color: black;
-      -webkit-transform: rotateY(-25deg);
-      -webkit-transform: rotateX(45deg);
-    }
-
-    #container > .color4{
-      top:650px;
-      left:27%;
-      width:100%;
-      height:500px;
-      background-color: black;
-      -webkit-transform: rotateY(-225deg);
-      -webkit-transform: rotateY(-115deg);
-    }
-
-        #container > .color5{
-      top:600px;
-      left:7%;
-      width:100%;
-      height:600px;
-      background-color: white;
-      -webkit-transform: rotateY(-125deg);
-      -webkit-transform: rotateY(-215deg);
-    }
-
-    #container > .box1{ /*title experiencing space*/
-      top:100px;
-      left:30%;
-      font-size: 40px;
-      color: white;
-      -webkit-transform: rotateY(25deg);
-    }
-
-    #container > .box2{ /*first alinea*/
-      top:250px;
-      left:5%;
-      height: 100%;
-      -webkit-transform: rotateY(-15deg);
-    }
-
-    #container > .box3{
-      top:350px;
-      left:50%;
-      height: 100%;
-      -webkit-transform: rotateX(-30deg);
-    }
-
-    #container > .box4{ /*aline 2 */
-      top:500px;
-      left:27%;
-      height: 100%;
-      color: white;
-      -webkit-transform: rotateY(45deg);
-    }
-
-    #container > .box5{
-      top:700px;
-      left:55%;
-      font-size:20px;
-      -webkit-transform: rotateX(25deg);
-    }
-
-    #container > .box6{ /* name Rafael Henneberke */
-      top:120px;
-      left:35%;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 30px;
-      /* color: #00004C; */
-      color:black;
-      -webkit-transform: rotateY(-45deg);
-    }
-
-    #container > :last-child {
-      top: 150px;
-      left:60%;
-      font-size: 20px;
-      color: black;
-      font-family: 'Open Sans', sans-serif;
-      -webkit-transform: rotateX(-45deg);
-    }
-
-    #controls {
-      margin: 10px 10px;
-      width: 500px;
-      padding-top: 700px;
-    }
-    
-    #controls > input {
-      width: 100%;
-
-
-
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="jquery-1.12.1.min.js"></script>
   <script type="text/javascript" charset="utf-8">
+
     function updatePerpective(value)
     {
-      document.getElementById('container').style.webkitPerspective = value;
-      document.getElementById('perspective-value').innerText = value;
+      document.getElementById('container').style.perspective = value;
+      //document.getElementById('perspective-value').innerText = value;
     }
 
     function setPerspectiveOrigin(event)
@@ -186,7 +26,7 @@
       var offsetY = event.pageY - container.offsetTop;
       
       var originStyle = (100 * offsetX / container.offsetWidth) + '% ' + (100 * offsetY / container.offsetHeight) + '%';
-      container.style.webkitPerspectiveOrigin = originStyle;
+      container.style.perspectiveOrigin = originStyle;
     }
 
     window.addEventListener('load', function() {
@@ -198,36 +38,88 @@
       updatePerpective(500)
     }, false);
 
+
+    $(function() {      
+
+      var navigation_bar = $('.jquery-script-center');
+      var lastScrollTop = $('body').scrollTop();
+
+      var handleScroll = function(e){
+
+        var dir = lastScrollTop - $('body').scrollTop() ;
+
+        if( dir < 0 )
+          navigation_bar.addClass('hide');
+        else
+          navigation_bar.removeClass('hide');
+
+
+        lastScrollTop = $('body').scrollTop();
+      }
+
+      $(window).scroll(handleScroll)
+
+
+    });
     
   </script>
 </head>
+
 <body>
 
+  <div id="jquery-script-menu">
+  <div class="jquery-script-center">
+    <a href="index.html">         Introduction</a>
+    <a href="window.html">        Window</a>
+    <a href="painting.html">      Painting</a>
+    <a href="photograph.html">    Photograph</a>
+    <a href="film.html">          Film</a>
+    <a href="screen.html">        Screen</a>
+    <a href="conclusion.html">    Conclusion</a>
+  </div>
+
   <div id="container">
-    <div></div><div class = "color1"></div><div class = "color2"></div><div class = "color4"></div><div class = "color5"></div><div class = "color3"></div>
-    <div class = "box6">Rafael <br>Henneberke</div>
-    <div class = "box1"><u>Place / content</u></div>
-    <div class = "box2"> Graphic design creates experiences. It’s a way of story telling that grasps the attention of the viewer and communicates with. Creating a message on a location has the power to completely change the context of the work. 
+    <div class = "vertical"></div>
+    <div class = "horizontal"></div>
+    
+    <div class = "image1"><img src="image.jpg" alt="Room" style="width:400px;height:300px;"> <br><b>[0] </b> www.randomiamge.com</div>
+    <div class = "box2"></div>
+    <div class = "box3"></div>
+
+    <div class = "title">Perceptual Frames</div>
+
+    <div class = "subtittle1">INTRODUCTION</div>
+
+    <div id = "intro" class = "intro">
+introduction [ Here you are. [0] Looking at a screen, a framed rectangle of light. Within the border of the screen starts the actual screen. In that screen a complex interface is shown, that is also shaped in multiple rectangles. In this interface we get used to the functions and aesthetics of it, and can function within. A browser is open, possible with multiple tabs, buttons, and a search bar that all function as different frames. We see the cursor, showing where you are.] <br><br>
+
+organisation [ After all, we are looking at a screen, an image. The image has a composition that relates to a grid it is in. Both the composition and the grid exist in the frame, and outside the frame we see the environment of the frame. The environment of the frame, the screen, the laptop is probably your table. On the table one could have a phone, including notes, but also papers or books. In the notes one could have a structure to organise and arrange the notes on different topics. These notes are structured, to later in time, zoom out and reflect on it. An organisation of the experiences is created.]
  </div>
 
-<div class = "box3"> In the art world we have a lot of artists that make site-specific art works that work really well. I’m curious if we can do the same as graphic designers. How does this translation work? Can we communicate more efficient and create better storytelling by using the surroundings a message is in?
-  <IMG SRC="preview.jpg" ALT="preview">
+
+<div id = "alinea1" class = "alinea1">
+
+perceiving [ The way we perceive the world around us, is the same way we present the same world. We know how images and spaces look like, because we’ve seen it, but also because we’re seeing it in our daily lives all the time. We see images, such as photos or videos, that are framed in a rectangular shape and we use devices, such as phones, books or posters that do the same. The way we perceive is constantly being shaped and organised in a certain frame or frames. I want to investigate the nature of frames, what the function of frames is and what it does to our perception?]<br><br>
+
+graphic design [ The reason why it is relevant to my study in graphic design, is that within graphic design we frame; that is, we organize visual preception and experiences. Using a frame not only means in the way we use it to perceive, but also how we use it to create images. Content is framed in posters, books, websites, videos, screens, etc... Graphic design is always framed, as it is always a frame by itself. The right medium is used for the right content and as a result, every medium has its own characteristics and limitations. Its own borders. By framing experiences it is good to know the relationship between content and the frame.]<br><br>
+
+function [ In my thesis I’m interrested in the way frames influence our way of perceiving images. I believe that as human beings we need guidelines. We use calendars to give order our life and we use schedules to organize our days. We have shelfs on where we order our books in and we use digital folders to give order to our documents. Frames emphasize or erase its content by cropping, using borders and/or margings. By using frames we choose what we show and what we don’t show. By using frames we create focus and understanding of an image or an object. The meaning and impact of an image can change by depending how it is framed. The everyday frames on where we see things through, have a dominance on the frame itself and its visual system. ]
 
 </div>
 
-<div class = "box4">
-The content of a work is being influenced by a lot of factors; its aesthetics, surroundings, time, experience and the input of the viewer. I would like to focus on the form and surroundings a work has. </div>
+<div id = "alinea2" class = "alinea2">
+approach [ In my research I focus on five frames that have a relevant meaning. The different frames in historic chronological order are; the window frame, the painting frame, the photography frame, the film frame and the screen frame. They all create different openings onto different worlds. Also none of the frames are created equally. While researching these perceptual frames, I focus on the history, material, size, shape, function, behaviour, the placement of the image, differences, environment, metaphorical aspect, spectators and I compare them to each other. When examening the frames, such as the painting, it is not only the content of the painting, but also the context in which the painting sits, such as the physical wooden frame and the usual environment of the frame. This makes me specify and focus on the function of the frame.]<br><br>
 
-<div class = "box5">
-The meaning of space is also changing because of technology. Because of new media and the format of video and web, the things we design don’t have anymore one specific place. They are supposed to work for different formats and places. 
- </div>
+<i>“There is no such thing as a frame in the natural world -- it is a man-made, man-created device, a diagrammatically sharpened and regulated reaction to his own irregular horizontal view of the world bordered by the brow and the cheek-bones when the face is held rigid and the eyes kept steady. It is an ironic curiosity that the Japanese have tried to reverse the game by forcing man-devised frames into landscape design using the sea horizon as the absolute horizontal, and planting tall straight-trunked trees to make the vertical frame-lines ironic and curious, since Oriental picture-making has stead fastly, until it came in contact with Western practices of seeing, eschewed the frame, not finding it at all necessary to use a frame to contain and shape the world. If the frame is a man-made device, then just as it has been created, so it can be un-created. The parallelogram can go.” 
+- Peter Greenaway</i>
 
-<div>Thesys Abstract </div>
-  </div>
-  
-      <div id="controls">
-    <input type="range" min="100" max="5000" value="500" onchange="updatePerpective(this.value)"><span id="perspective-value"></span>
-  </div>
+</div>
+
+<div id = "footnote" class = "footnote">
+Window, Marsilio, <u>Manfredo di Robiland</u>, p66
+</div>
+
+
 
 </body>
 </html>
