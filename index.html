@@ -8,61 +8,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Perceptual Frames</title>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="introduction.css">
   <script src="jquery-1.12.1.min.js"></script>
-  <script type="text/javascript" charset="utf-8">
-
-    function updatePerpective(value)
-    {
-      document.getElementById('container').style.perspective = value;
-      //document.getElementById('perspective-value').innerText = value;
-    }
-
-    function setPerspectiveOrigin(event)
-    {
-      var container = document.getElementById('container');
-
-      var offsetX = event.pageX - container.offsetLeft;
-      var offsetY = event.pageY - container.offsetTop;
-      
-      var originStyle = (100 * offsetX / container.offsetWidth) + '% ' + (100 * offsetY / container.offsetHeight) + '%';
-      container.style.perspectiveOrigin = originStyle;
-    }
-
-    window.addEventListener('load', function() {
-      var container = document.getElementById('container');
-      container.addEventListener('mousemove', setPerspectiveOrigin, false);
-      container.addEventListener('mouseout', function() {
-        container.style.webkitPerspectiveOrigin = '50% 50%';
-      }, false);
-      updatePerpective(500)
-    }, false);
-
-
-    $(function() {      
-
-      var navigation_bar = $('.jquery-script-center');
-      var lastScrollTop = $('body').scrollTop();
-
-      var handleScroll = function(e){
-
-        var dir = lastScrollTop - $('body').scrollTop() ;
-
-        if( dir < 0 )
-          navigation_bar.addClass('hide');
-        else
-          navigation_bar.removeClass('hide');
-
-
-        lastScrollTop = $('body').scrollTop();
-      }
-
-      $(window).scroll(handleScroll)
-
-
-    });
-    
-  </script>
+  <script type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -82,11 +31,13 @@
     <div class = "vertical"></div>
     <div class = "horizontal"></div>
     
-    <div class = "image1"><img src="image.jpg" alt="Room" style="width:400px;height:300px;"> <br><b>[0] </b> www.randomiamge.com</div>
+    <div class = "image1"></div>
+    <div class = "image2"></div>
     <div class = "box2"></div>
     <div class = "box3"></div>
 
-    <div class = "title">Perceptual Frames</div>
+    <div class = "title">PERCEPTUAL FRAMES</div>
+    <div class = "name">BY RAFAEL HENNEBERKE</div>
 
     <div class = "subtittle1">INTRODUCTION</div>
 

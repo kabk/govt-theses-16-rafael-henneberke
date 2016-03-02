@@ -1,0 +1,235 @@
+.jquery-script-center {
+    top:0px;
+    height: 50px;
+    position: fixed;
+    background: white;
+    z-index: 9999;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height:25px;
+    word-spacing: 40px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      line-height:17px;
+      overflow-x: hidden;
+    }
+
+  html{
+    border: 1px solid white;
+    }
+
+
+    a {
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: black;
+    }
+
+    ::selection {
+      background: #000;
+      color:#fff;
+    }
+
+    ::-moz-selection {
+      background: #000;
+      color:#fff;
+    }
+
+    ::-webkit-selection {
+      background:#000;
+      color:#fff;
+    }
+
+    #container {
+      position: relative;
+      height: 600px;
+      width: 120%;
+      left: -15px;
+      padding:-10px;
+      border: 0px solid black;
+     /* background-color: #F7AD92; */
+      background-color: white;
+      -webkit-perspective: 500;
+      /*mix-blend-mode: exclusion; */
+      transition: perspective .25s, perspective-origin .25s;
+    }
+
+    #container > div {
+      position: absolute;
+      margin: 5px;
+      height: 100%;
+      width: 300px;
+      padding: 50px;
+      -webkit-box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+     #container > .title{ /*title*/
+     /* border-style: solid;
+      border-width: 7px; */
+      position: inherit;
+      top:80px;
+      left:35%;
+      font-size: 45px;
+      color: black;
+      line-height:50px;
+      height: 180px;
+      -webkit-transform: rotateX(-10deg);
+    }
+
+    #container > .vertical {
+      top:640px;
+      width:100%;
+      left:15%;
+      height:150%;
+      /* background-color: #00004C; */
+      background-color: black;
+      -webkit-transform: rotateY(-40deg);
+    }
+
+
+    #container > .frame{
+      top:100px;
+      left:25%;
+      width:70%;
+      height:600px;
+      background-color: black;
+      -webkit-transform: rotateY(30deg);
+    }
+
+    #container > .box2{ /*second alinea*/
+      top:150px;
+      width: 35%;
+      left:30%;
+      height:600px;
+      background-color: white;
+      -webkit-transform: rotateY(-20deg);
+    }
+
+    #container > .box3{ /*second alinea*/
+      top:1250px;
+      width: 45%;
+      left:-5%;
+      height:800px;
+      background-color: black;
+      -webkit-transform: rotateX(20deg);
+    }
+
+
+    #container > .subtittle1 {
+      top: 30px;
+      left:30%;
+      font-size: 20px;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      -webkit-transform: rotateX(25deg);
+    }
+
+    #container > .intro{ /*first alinea*/
+      top:100px;
+      width: 30%;
+      left:7%;
+      height: 100%;
+      color: white;
+      -webkit-transform: rotateY(1deg);
+    }
+
+    #container > .image1{ /*first alinea*/
+      top:700px;
+      width: 200px;
+      left:60%;
+      height: 50px;
+      -webkit-transform: rotateX(20deg);
+      font-size: 7px;
+    }
+
+        #container > .image2{ /*first alinea*/
+      top:650px;
+      left:5%;
+      -webkit-transform: rotateX(-10deg);
+      font-size: 7px;
+    }
+
+    #container > .alinea1{ /*first alinea*/
+      top:250px;
+      width: 450px;
+      left:33%;
+      height: 100%;
+      color: black;
+      -webkit-transform: rotateY(1deg);
+    }
+
+    #container > .alinea2{ /*first alinea*/
+      color: white;
+      top:800px;
+      width: 600px;
+      left:45%;
+      height: 100%;
+      -webkit-transform: rotateY(-1deg);
+    }
+
+    #container > .alinea3{ /*first alinea*/
+      color: white;
+      top:1050px;
+      width: 430px;
+      left:5%;
+      height: 100%;
+      -webkit-transform: rotateY(-1deg);
+    }
+
+    #container > .alinea4{ /*first alinea*/
+      color: black;
+      top:1600px;
+      width: 430px;
+      left:40%;
+      height: 100%;
+      -webkit-transform: rotateY(-1deg);
+    }
+
+   /*#container > .box3{ /*atmosphere color
+      background-color: white;
+      top:900px;
+      width: 60%;
+      left:7%;
+      height: 500px;
+      -webkit-transform: rotateY(45deg);
+    } */
+
+   #container > .footnote {
+      background-color: grey;
+      padding:1px;
+      top: 1500px;
+      left: 60%;
+      height: auto;
+      width: auto;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 9px;
+      -webkit-transform: rotateY(-5deg);
+    }
+
+    #controls {
+      margin: 10px 10px;
+      width: 500px;
+      padding-top: 700px;
+    }
+    
+    #controls > input {
+      width: 100%;
+    }
+
+
+    .hide{ display: none;}
+
+    
