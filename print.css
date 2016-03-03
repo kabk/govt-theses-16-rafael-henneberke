@@ -1,0 +1,62 @@
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+	background-color: black;
+	width: 600px;
+	border: 2px solid black;
+	border-style: dashed solid dashed double;
+	padding-right: 150px;
+	padding-left:100px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	transform: rotate(1.5deg);
+	/*display: inline;*/
+}
+
+.jquery-script-center {
+	text-align: right;
+    word-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+    #container > .subtittle1 {
+    	text-align: center;
+    	font-size: 18px;
+    	margin-bottom:30px;
+    	transform: rotate(-5deg);
+    	left: -10px;
+    	border: 5px solid black;
+}
+
+     #container > .title{
+     	font-size: 12px;
+     }
+     #container > .name{
+     	font-size: 12px;
+     	margin-bottom: 30px;
+     }
+   
+    a {
+     	text-decoration: none;
+     }
+
+    #container > div {
+	border: 2px solid black;
+	border-style: dashed solid dashed double;
+	transform: rotate(-2deg);
+	margin-bottom:10px;
+    }
+
+    #container > .alinea1{
+    	left: 20px;
+    	transform: rotate(1deg);
+    }
+
+   #container > .footnote {
+   		text-align: right;
+   		transform: rotate(1deg);
+   }
+
+
+

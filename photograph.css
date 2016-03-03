@@ -153,8 +153,8 @@
 
         #container > .intro{ /*first alinea*/
       top:100px;
-      width: 30%;
-      left:3%;
+      width: 35%;
+      left:0%;
       height: 100%;
       color: white;
       -webkit-transform: rotateY(1deg);
@@ -162,8 +162,8 @@
 
     #container > .alinea0{ /*first alinea*/
       top:100px;
-      width: 450px;
-      left:27%;
+      width: 34%;
+      left:28%;
       height: 100%;
       color: black;
       -webkit-transform: rotateY(1deg);
