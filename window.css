@@ -150,6 +150,7 @@
       left:50%;
       height: 100%;
       -webkit-transform: rotateY(-60deg);
+      color: white;
     }
 
     #container > .alinea1{ /*first alinea*/
@@ -188,9 +189,14 @@
       width: auto;
       color: white;
       font-family: 'Open Sans', sans-serif;
-      font-size: 9px;
+      font-size: 7px;
+      line-height: 7px;
       -webkit-transform: rotateY(10deg);
     }
+
+    #container > .sup {
+    vertical-align: super;
+  }
 
     #controls {
       margin: 10px 10px;
@@ -200,6 +206,15 @@
     
     #controls > input {
       width: 100%;
+    }
+
+        #container > .next {
+      position: fixed;
+      right:200px;
+      top: 1400px;
+      font-size: 50px;
+      -webkit-filter: invert(100%);
+      -webkit-transform: rotateX(-20deg);
     }
 
 

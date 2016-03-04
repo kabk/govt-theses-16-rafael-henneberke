@@ -200,13 +200,14 @@
    #container > .footnote {
       background-color: grey;
       padding:1px;
-      top: 1400px;
+      top: 1350px;
       left: 120px;
       height: auto;
       width: auto;
       color: white;
       font-family: 'Open Sans', sans-serif;
-      font-size: 9px;
+      font-size: 7px;
+      line-height: 7px;
       -webkit-transform: rotateY(10deg);
     }
 
@@ -220,6 +221,15 @@
       width: 100%;
     }
 
+                #container > .next {
+      position: fixed;
+      background-color: black;
+      color: black;
+      right:200px;
+      top: 1800px;
+      font-size: 50px;
+      -webkit-transform: rotateX(20deg);
+    }
 
     .hide{ display: none;}
 

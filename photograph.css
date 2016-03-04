@@ -137,14 +137,16 @@
 
     #container > .image1{ /*first alinea*/
       top:650px;
-      width: 200px;
+      width: 400px;
       left:35%;
       height: 50px;
       -webkit-transform: rotateX(20deg);
       font-size: 7px;
+      color:white;
     }
 
         #container > .image2{ /*first alinea*/
+      width: 400px;
       top:650px;
       left:5%;
       -webkit-transform: rotateY(-10deg);
@@ -223,7 +225,8 @@
       width: auto;
       color: white;
       font-family: 'Open Sans', sans-serif;
-      font-size: 9px;
+      font-size: 7px;
+      line-height: 7px;
       -webkit-transform: rotateY(-5deg);
     }
 
@@ -235,6 +238,15 @@
     
     #controls > input {
       width: 100%;
+    }
+
+                #container > .next {
+      position: fixed;
+      color: black;
+      right:100px;
+      top: 1300px;
+      font-size: 50px;
+      -webkit-transform: rotateX(20deg);
     }
 
 

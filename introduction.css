@@ -203,7 +203,8 @@
       width: auto;
       color: white;
       font-family: 'Open Sans', sans-serif;
-      font-size: 9px;
+      font-size: 7px;
+      line-height: 7px;
       -webkit-transform: rotateY(-10deg);
     }
 
@@ -215,6 +216,16 @@
     
     #controls > input {
       width: 100%;
+    }
+
+    #container > .next {
+      position: fixed;
+      color: red;
+      right:200px;
+      top: 1000px;
+      font-size: 50px;
+      -webkit-filter: invert(100%);
+      -webkit-transform: rotateX(-20deg);
     }
 
 

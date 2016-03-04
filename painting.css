@@ -146,12 +146,13 @@
     }
 
     #container > .image1{ /*first alinea*/
-      top:700px;
-      width: 200px;
+      top:650px;
+      width: 300px;
       left:60%;
       height: 50px;
       -webkit-transform: rotateX(20deg);
       font-size: 7px;
+      color: white;
     }
 
         #container > .image2{ /*first alinea*/
@@ -209,13 +210,14 @@
    #container > .footnote {
       background-color: grey;
       padding:1px;
-      top: 1500px;
-      left: 60%;
+      top: 1300px;
+      left: 40%;
       height: auto;
       width: auto;
       color: white;
       font-family: 'Open Sans', sans-serif;
-      font-size: 9px;
+      font-size: 7px;
+      line-height: 7px;
       -webkit-transform: rotateY(-5deg);
     }
 
@@ -227,6 +229,15 @@
     
     #controls > input {
       width: 100%;
+    }
+
+            #container > .next {
+      position: fixed;
+      color: black;
+      right:200px;
+      top: 1900px;
+      font-size: 50px;
+      -webkit-transform: rotateX(20deg);
     }
 
 
